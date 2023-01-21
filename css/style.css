@@ -6,16 +6,8 @@ body{
     margin: 0;
     padding: 0;
 }
-#an-home{
-position: relative;
-}
-#an-home::after{
-content: "______";
-top:30%;
-position: absolute;
-left: 50%;
-transform: translateX(-50%);
-
+header .navbar .active{
+    border-bottom: 2px solid rgb(214, 213, 213) !important;
 }
 .specia-heading h1{
     font-size: 50px;
@@ -25,6 +17,9 @@ header{
     background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../img/img/bg.jpg);
     background-position: center center;
     background-size: cover;
+}
+header .navbar{
+    background-color:rgba(0,0,0,0.1);
 }
 header .home .home-content h1{
     font-size: 70px;
@@ -42,7 +37,6 @@ header .home .home-content i{
     border-radius: 50%;
     cursor: pointer;
 }
-
 header .home .home-content h2::after {
     position: absolute;
     content: " |";
@@ -129,27 +123,36 @@ header .home .home-content h2::after {
     }
     header .home .home-content h1{
         font-size: 50px;
+        }
+    .navbar-collapse{
+        background-color: white;
+        position: relative;
     }
-  .navbar-collapse{
-      background-color: white;
-    position: relative;
-  }
-  .navbar-collapse a{
-      color: black !important;
-  }
-  input{
-      width:97% !important;
-  }
-  footer p{
-      font-size:12px !important;
-  }
-  .specia-heading h1{
-      font-size: 30px !important;
-      font-weight:600 !important;
-  }
-  .about .btn{
-      margin-top: 10px;
-  }
+    .navbar-collapse a{
+        color: black !important;
+    }
+    input{
+        width:97% !important;
+    }
+    footer p{
+        font-size:12px !important;
+    }
+    .specia-heading h1{
+        font-size: 30px !important;
+        font-weight:600 !important;
+    }
+    .about .btn{
+        margin-top: 10px;
+    }
+    .navbar{
+        width: 100%;
+        background-color: white !important;
+    }
+    .navbar-brand{
+        color: back !important;
+        margin-left: 20px;
+        z-index:1000;
+    }
 }
 /* end-header  */
 /* start-about */
@@ -180,6 +183,10 @@ color: black !important;
 .protfolio{
     background-color: #ffffff !important;
 }
+
+.protfolio .nav-item .active {
+    border-bottom: 1.5px solid black !important; 
+}
 .protfolio .pro-item h5{
     display: block;
 }
@@ -189,17 +196,22 @@ color: black !important;
     background-color: white;
     width:70%;
     height:60%;
-    margin-top: 50px;
     opacity: 0;
-    transition: 0.7s all;
+    transition: 0.4s all;
 }
 .protfolio .pro-item:hover .layer{
     opacity: 10;
     width: 95%;
-    height: 95%;
+    height: 77%;
     margin-top: 10px;
 }
-
+.protfolio .pro-item i{
+    margin-top: 20%; 
+    transition: 0.5s all;
+}
+.protfolio .pro-item:hover i{
+    margin-top: 5%; 
+}
 /* end-protfolio */
 /* clients */
 .clients{
@@ -264,4 +276,4 @@ footer{
     justify-content: center;
     align-items: center;
 }
-/* end-footer */
+/* end-footer and goodby*/
