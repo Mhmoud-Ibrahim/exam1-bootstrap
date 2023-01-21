@@ -1,0 +1,267 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppines'sans-serif;
+    margin: 0;
+    padding: 0;
+}
+#an-home{
+position: relative;
+}
+#an-home::after{
+content: "______";
+top:30%;
+position: absolute;
+left: 50%;
+transform: translateX(-50%);
+
+}
+.specia-heading h1{
+    font-size: 50px;
+font-weight: 800;
+}
+header{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../img/img/bg.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+header .home .home-content h1{
+    font-size: 70px;
+    font-weight: 600;
+}
+header .home .home-content h2 {
+    width: 100%;
+    position: relative;
+    transform: translateX(-10%);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 44px;
+}
+header .home .home-content i{
+    background-color:rgb(0.0.0);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+header .home .home-content h2::after {
+    position: absolute;
+    content: " |";
+    animation: typing linear infinite 15s ;
+    font-weight: 600;
+}
+@keyframes typing {
+    0%{content: "|";}
+    5%{content: "";}
+    7%{content: "|";}
+    8%{content: "L|";}
+    8%{content: "La|";}
+    9%{content: "Lar|";}
+    10%{content: "Larr|";}
+    11%{content: "Larry|";}
+    12%{content: "Larry |";}
+    13%{content: "Larry D|";}
+    13%{content: "Larry Da|";}
+    14%{content: "Larry Dan|";}
+    15%{content: "Larry Dani|";}
+    16%{content: "Larry Danie|";}
+    16%{content: "Larry Daniel|";}
+    17%{content: "Larry Daniels|";}
+    18%{content: "Larry Daniel|";}
+    20%{content: "Larry Danie|";}
+    25%{content: "Larry Dani|";}
+    26%{content: "Larry Dani|";}
+    26%{content: "Larry Dan|";}
+    27%{content: "Larry Da|";}
+    28%{content: "Larry D|";}
+    29%{content: "Larry |";}
+    30%{content: "Larry|";}
+    31%{content: "Larr|";}
+    32%{content: "Lar|";}
+    33%{content: "La|";}
+    35%{content: "L|";}
+    37%{content: "|";}
+    40%{content: " ";}
+    43%{content: "|";}
+    47%{content: "D|";}
+    48%{content: "De|";}
+    49%{content: "Dev|";}
+    50%{content: "Deve|";}
+    51%{content: "Devel|";}
+    53%{content: "Develo|";}
+    54%{content: "Develop|";}
+    57%{content: "Develope|";}
+    57%{content: "Developer|";}
+    58%{content: "Develope|";}
+    59%{content: "Develop|";}
+    60%{content: "Develo|";}
+    61%{content: "Devel|";}
+    62%{content: "Deve|";}
+    63%{content: "Deve|";}
+    64%{content: "Dev|";}
+    67%{content: "De|";}
+    68%{content: "D|";}
+    70%{content: "|";}
+    70%{content: "";}
+    72%{content: "|";}
+    73%{content: " D|";}
+    74%{content: " De|";}
+    75%{content: " Des|";}
+    79%{content: " Desi|";}
+    80%{content: " Desig|";}
+    81%{content: " Designr|";}
+    83%{content: " Designe|";}
+    85%{content: " Designer|";}
+    87%{content: " Designer ";}
+    90%{content: " Designe|";}
+    92%{content: " Design|";}
+    93%{content: " Desig|";}
+    95%{content: " Desi|";}
+    96%{content: " Des|";}
+    97%{content: " De|";}
+    98%{content: " D|";}
+    99%{content: " |";}
+    100%{content: "  ";} 
+}
+@media screen and (max-width:700px) {
+    header .home .home-content h2{
+        font-size: 20px;
+        transform: translateX(-20%);
+    }
+    header .home .home-content h1{
+        font-size: 50px;
+    }
+  .navbar-collapse{
+      background-color: white;
+    position: relative;
+  }
+  .navbar-collapse a{
+      color: black !important;
+  }
+  input{
+      width:97% !important;
+  }
+  footer p{
+      font-size:12px !important;
+  }
+  .specia-heading h1{
+      font-size: 30px !important;
+      font-weight:600 !important;
+  }
+  .about .btn{
+      margin-top: 10px;
+  }
+}
+/* end-header  */
+/* start-about */
+.about .about-content h1{
+    font-weight: 800;
+}
+.about .btn-dark:hover{
+background-color: white !important;
+color: black !important;
+}
+/* end-about */
+/* srart-secvices */
+.services{
+    background-color: #F7F7F7 !important;
+}
+.services .serv-item i{
+    transition: 0.5s all;
+    font-size: 25px;
+    border-radius: 50%;
+}
+.services .serv-item:hover i{
+    background-color: black;
+    border-radius: 50%;
+    color: white !important;
+}
+/* end-services */
+/* protfolio */
+.protfolio{
+    background-color: #ffffff !important;
+}
+.protfolio .pro-item h5{
+    display: block;
+}
+.protfolio .pro-item .layer{
+    position: absolute;
+    text-align: center;
+    background-color: white;
+    width:70%;
+    height:60%;
+    margin-top: 50px;
+    opacity: 0;
+    transition: 0.7s all;
+}
+.protfolio .pro-item:hover .layer{
+    opacity: 10;
+    width: 95%;
+    height: 95%;
+    margin-top: 10px;
+}
+
+/* end-protfolio */
+/* clients */
+.clients{
+    background-color:#f7f7f7 ;
+}
+.carousel-indicators [data-bs-target]{
+    width:10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: gray !important;
+}
+/* clients */
+/* blog */
+.blog .carousel-indicators [data-bs-target]{
+    width:10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: gray !important;
+}
+.blog .blog-item .blog-img img{
+     transition: 0.6s all  !important;
+}
+.blog .blog-item:hover img{
+    transform: scale(1.2);
+}
+/* end-blog */
+/* contact */
+.contact .contact-item i{
+    transition: 0.5s all;
+    font-size: 25px;
+    border-radius: 50%;
+    padding: 10px;
+}
+.contact .contact-item:hover i{
+    background-color: black;
+    border-radius: 50%;
+    color: white !important;
+}
+.contact input{
+    width:48%;
+    height:40px;
+    border: none;
+    background-color: #f4f4f4 !important;
+    margin: 5px;
+    border-radius: 6px;
+}
+.contact textarea{
+    width:98%;
+    border-radius:6px;
+    border: none;
+    background-color: #f4f4f4 !important;
+}
+.contact .btn-dark:hover{
+    background-color: white !important;
+    color: black !important;
+    }
+/* end-contact */
+/* footer */
+footer{
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* end-footer */
